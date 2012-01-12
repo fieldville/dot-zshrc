@@ -54,7 +54,8 @@ alias findgrep='find . -name "*.*" | grep -v .svn | grep -v "/\." | xargs grep'
 alias drails='rails --database=postgresql'
 alias svngrep='svn list -R | xargs grep'
 alias ub='ssh ubuntu'
-alias cdgem='cd $GEM_HOME'
+#alias cdgem='cd $GEM_HOME'
+alias cdgem='cd `gem env gemdir`'
 alias memcachedstat='echo -e "stats\r\nquit\r\n" | nc localhost 11211'
 
 [[ -r $HOME/.alias ]] && source $HOME/.alias
