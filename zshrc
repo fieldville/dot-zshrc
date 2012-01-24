@@ -57,6 +57,7 @@ alias ub='ssh ubuntu'
 #alias cdgem='cd $GEM_HOME'
 alias cdgem='cd `gem env gemdir`'
 alias memcachedstat='echo -e "stats\r\nquit\r\n" | nc localhost 11211'
+alias rm_trailing_ws_rb="find . -name '*.rb' -exec sed -i '' 's/[ ]*$//' {} \;"
 
 [[ -r $HOME/.alias ]] && source $HOME/.alias
 
