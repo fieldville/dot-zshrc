@@ -68,3 +68,7 @@ alias rm_trailing_ws_rb="find . -name '*.rb' -exec sed -i '' 's/[ ]*$//' {} \;"
 # preexec () {
 #   [ ${STY} ] && echo -ne "\ek${1%% *}\e\\"
 # }
+
+function neobundle-update () {
+  vim -c "execute \"NeoBundleInstall!\" | q | q"
+}
