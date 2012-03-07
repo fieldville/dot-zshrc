@@ -73,6 +73,6 @@ function neobundle-update () {
   vim -c "execute \"NeoBundleInstall!\" | q | q"
 }
 
-if ! [ "$TMUX" = "" ]; then
-    tmux set-option status-bg $(perl -MList::Util=sum -e'print+(red,green,blue,yellow,cyan,magenta,white)[sum(unpack"C*",shift)%7]' $(hostname)) | cat > /dev/null
-fi
+# if ! [ "$TMUX" = "" ]; then
+#     tmux set-option status-bg $(perl -MList::Util=sum -e'print+(red,green,blue,yellow,cyan,magenta,white)[sum(unpack"C*",shift)%7]' $(hostname)) | cat > /dev/null
+# fi
