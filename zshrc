@@ -91,3 +91,6 @@ if ! [ "$TMUX" = "" ]; then
 fi
 
 export JAVA_OPTS='-Dfile.encoding=UTF-8'
+
+export NODE_PATH=/usr/local/lib/node_modules
+
