@@ -5,12 +5,9 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="wezm"
-#ZSH_THEME="tjkirch"
 #ZSH_THEME="steeef"
 #ZSH_THEME="xiong-chiamiov-plus"
-ZSH_THEME="juanghurtado"
+ZSH_THEME="candy"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
