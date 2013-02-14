@@ -26,7 +26,7 @@ DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(ant brew bundler compleat gem git github git-extras heroku history-substring-search node npm osx rails rails3 rake ruby rbenv svn vi-mode debian perl vagrant cap ssh-agent mvn sublime)
+plugins=(ant brew bundler compleat gem git git-extras git-flow git-remote-branch github heroku history history-substring-search node npm osx rails rails3 rake ruby rbenv svn vi-mode debian perl vagrant cap ssh-agent mvn sublime)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -93,4 +93,3 @@ export JAVA_OPTS='-Dfile.encoding=UTF-8'
 #export JAVA_OPTS="-Dfile.encoding=UTF-8 -Dline.separator=$'\n'"
 
 export NODE_PATH=/usr/local/lib/node_modules
-
