@@ -94,3 +94,18 @@ export MAVEN_OPTS='-Djava.awt.headless=true'
 #export JAVA_OPTS="-Dfile.encoding=UTF-8 -Dline.separator=$'\n'"
 
 export NODE_PATH=/usr/local/lib/node_modules
+
+# expanding global alias
+# http://blog.patshead.com/2011/07/automatically-expanding-zsh-global-aliases-as-you-type.html
+globalias() {
+   if [[ $LBUFFER =~ ' [A-Z0-9]+$' ]]; then
+     zle _expand_alias
+   fi
+   zle self-insert
+}
+
+zle -N globalias
+
+bindkey " " globalias
+bindkey "^ " magic-space           # control-space to bypass completion
+bindkey -M isearch " " magic-space # normal space during searches
