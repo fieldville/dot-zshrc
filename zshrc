@@ -60,6 +60,18 @@ alias rm_trailing_ws_rb="find . -name '*.rb' -exec sed -i '' 's/[ ]*$//' {} \;"
 alias v8="rlwrap v8"
 alias rhino="rlwrap rhino"
 
+# Global aliases -- These do not have to be
+# at the beginning of the command line.
+alias -g M='| more'
+alias -g H='| head'
+alias -g T='| tail'
+alias -g L='| lv'
+alias -g V='| vim -'
+alias -g N='| cat -n'
+alias -g G='| grep'
+alias -g X='| xargs'
+
+
 [[ -r $HOME/.alias ]] && source $HOME/.alias
 
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
