@@ -125,3 +125,6 @@ bindkey -M isearch " " magic-space # normal space during searches
 
 # zsh-completions
 fpath=($HOME/.zsh/zsh-completions/src $fpath)
+
+autoload -Uz compinit
+compinit
