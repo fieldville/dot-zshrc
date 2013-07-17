@@ -1,6 +1,8 @@
 [submodule "zsh-completions"]
 	path = zsh-completions
 	url = git://github.com/zsh-users/zsh-completions.git
+	ignore = dirty
 [submodule "oh-my-zsh"]
 	path = oh-my-zsh
 	url = git://github.com/robbyrussell/oh-my-zsh.git
+	ignore = dirty
