@@ -9,5 +9,4 @@ Create symlinks:
 Switch to the `~/.zsh` directory, and fetch submodules:
 
     cd ~/.zsh
-    git submodule init
-    git submodule update
+    git submodule update --init
