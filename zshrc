@@ -75,8 +75,6 @@ alias -g X='| xargs'
 
 [[ -r $HOME/.alias ]] && source $HOME/.alias
 
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
 # set running process name for screen
 # preexec () {
 #   [ ${STY} ] && echo -ne "\ek${1%% *}\e\\"
