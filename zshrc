@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.zsh/oh-my-zsh
 
+# zsh-completions
+fpath=($HOME/.zsh/zsh-completions/src $fpath)
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -121,9 +124,6 @@ bindkey " " globalias
 bindkey "^ " magic-space           # control-space to bypass completion
 bindkey -M isearch " " magic-space # normal space during searches
 
-
-# zsh-completions
-fpath=($HOME/.zsh/zsh-completions/src $fpath)
 
 autoload -Uz compinit
 compinit
