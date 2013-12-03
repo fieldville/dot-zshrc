@@ -29,7 +29,7 @@ DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler compleat gem git git-extras git-flow git-remote-branch github heroku history node npm osx rails rake ruby rbenv svn vi-mode perl vagrant cap ssh-agent mvn sublime history-substring-search autojump)
+plugins=(brew bundler compleat gem git git-extras git-flow git-remote-branch github heroku history node osx rails rake ruby rbenv svn vi-mode perl vagrant cap ssh-agent mvn sublime history-substring-search autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -127,3 +127,5 @@ bindkey -M isearch " " magic-space # normal space during searches
 
 autoload -Uz compinit
 compinit
+
+which npm >/dev/null 2>&1 && eval "$(npm completion 2>/dev/null)"
