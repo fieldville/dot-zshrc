@@ -63,6 +63,7 @@ alias rm_trailing_ws_rb="find . -name '*.rb' -exec sed -i '' 's/[ ]*$//' {} \;"
 alias v8="rlwrap v8"
 alias rhino="rlwrap rhino"
 alias ag='ag --pager="less -R"'
+alias grt='$(git rev-parse --show-toplevel)'
 
 # Global aliases -- These do not have to be
 # at the beginning of the command line.
