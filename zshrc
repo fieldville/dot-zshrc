@@ -35,6 +35,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# man zshoptions
+# 先頭スペースだと履歴に残らない
+setopt HIST_IGNORE_SPACE
+
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
