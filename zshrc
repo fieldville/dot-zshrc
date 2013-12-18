@@ -85,6 +85,7 @@ alias -g G='| grep'
 alias -g X='| xargs'
 
 
+[[ -r $HOME/.alias.private ]] && source $HOME/.alias.private
 [[ -r $HOME/.alias ]] && source $HOME/.alias
 
 # set running process name for screen
