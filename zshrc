@@ -115,6 +115,7 @@ fi
 export JAVA_TOOL_OPTIONS='-Dfile.encoding=UTF8'
 export JAVA_OPTS='-Dfile.encoding=UTF-8'
 export MAVEN_OPTS='-Djava.awt.headless=true'
+export CATALINA_OPTS="-server -Xmx128M -Xms64M -Xss256k -Djava.awt.headless=true"
 #export JAVA_OPTS="-Dfile.encoding=UTF-8 -Dline.separator=$'\n'"
 
 export NODE_PATH=/usr/local/lib/node_modules
