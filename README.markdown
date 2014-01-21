@@ -1,12 +1,18 @@
-Installation:
+## Installation:
 
+```
     git clone git://github.com/fieldville/dot-zshrc.git ~/.zsh
+```
 
-Create symlinks:
+## Create symlinks:
 
+```
     ln -s ~/.zsh/zshrc ~/.zshrc
+```
 
-Switch to the `~/.zsh` directory, and fetch submodules:
+## Switch to the `~/.zsh` directory, and fetch submodules:
 
+```
     cd ~/.zsh
     git submodule update --init
+```
