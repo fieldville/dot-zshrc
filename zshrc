@@ -58,6 +58,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias grep='grep --color'
 export GREP_OPTIONS=$GREP_OPTIONS' --binary-files=without-match'
+alias diff='colordiff'
 alias lv='lv -c'
 alias less=lv
 alias findgrep='find . -name "*.*" | grep -v .svn | grep -v "/\." | xargs grep'
