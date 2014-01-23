@@ -97,6 +97,9 @@ function neobundle-update () {
   vim -c "execute \"NeoBundleInstall!\" | q | q"
 }
 
+[[ -r $HOME/.zsh/auto_execute_terminal_multi_plexer.zsh ]] \
+    && source $HOME/.zsh/auto_execute_terminal_multi_plexer.zsh
+
 if ! [ "$TMUX" = "" ]; then
   cat /proc/version 2>/dev/null | grep -qi debian && IS_DEBIAN=1
   cat /proc/version 2>/dev/null | grep -qi ubuntu && IS_UBUNTU=1
