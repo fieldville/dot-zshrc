@@ -99,7 +99,7 @@ function neobundle-update () {
 }
 
 # http://d.hatena.ne.jp/tyru/20100828/run_tmux_or_screen_at_shell_startup
-[[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
+uname -a | grep -qi darwin && [[ -z "$TMUX" && ! -z "$PS1" ]] && tmux
 
 if [[ ! -z "$TMUX" ]]; then
   cat /proc/version 2>/dev/null | grep -qi debian && IS_DEBIAN=1
