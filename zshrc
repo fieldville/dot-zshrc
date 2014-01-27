@@ -116,6 +116,13 @@ if [[ ! -z "$TMUX" ]]; then
   fi
 fi
 
+# [tmuxのlaunchctlエラー対策](http://qiita.com/naoty_k/items/2eb2b201782c038e38f6)
+# -> パスワードが必要になる
+#if [[ ! -z "$TMUX" ]]; then
+#  alias pbcopy="ssh 127.0.0.1 pbcopy"
+#  alias launchctl="ssh 127.0.0.1 launchctl"
+#fi
+
 export JAVA_TOOL_OPTIONS='-Dfile.encoding=UTF8'
 export JAVA_OPTS='-Dfile.encoding=UTF-8'
 export MAVEN_OPTS='-Djava.awt.headless=true'
