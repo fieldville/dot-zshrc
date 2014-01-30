@@ -151,3 +151,4 @@ autoload -Uz compinit
 compinit
 
 which npm >/dev/null 2>&1 && eval "$(npm completion 2>/dev/null)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
