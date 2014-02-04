@@ -152,3 +152,7 @@ compinit
 
 which npm >/dev/null 2>&1 && eval "$(npm completion 2>/dev/null)"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+function zman() {
+    PAGER="less -g -s '+/^       "$1"'" man zshall
+}
