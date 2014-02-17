@@ -84,7 +84,7 @@ alias -g V='| vim -'
 alias -g N='| cat -n'
 alias -g G='| grep'
 alias -g X='| xargs'
-
+alias -g A="| awk '{print \$2}'"
 
 [[ -r $HOME/.alias.private ]] && source $HOME/.alias.private
 [[ -r $HOME/.alias ]] && source $HOME/.alias
