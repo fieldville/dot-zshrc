@@ -76,6 +76,7 @@ alias v8="rlwrap v8"
 alias rhino="rlwrap rhino"
 alias ag='ag --pager="less -R"'
 alias grt='$(git rev-parse --show-toplevel)'
+alias bower='noglob bower'
 
 # Global aliases -- These do not have to be
 # at the beginning of the command line.
