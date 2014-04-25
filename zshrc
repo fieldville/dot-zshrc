@@ -133,7 +133,7 @@ export MAVEN_OPTS='-Djava.awt.headless=true'
 export CATALINA_OPTS="-server -Xmx128M -Xms64M -Xss256k -Djava.awt.headless=true"
 #export JAVA_OPTS="-Dfile.encoding=UTF-8 -Dline.separator=$'\n'"
 
-export NODE_PATH=/usr/local/lib/node_modules
+export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
 
 # expanding global alias
 # http://blog.patshead.com/2011/07/automatically-expanding-zsh-global-aliases-as-you-type.html
