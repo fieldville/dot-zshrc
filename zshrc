@@ -86,6 +86,9 @@ bindkey "^N" history-beginning-search-forward-end
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^S' history-incremental-pattern-search-forward
 
+# 自動定義されてしまうhistoryのaliasを解除
+unalias history
+
 # man zshoptions
 #
 # 先頭スペースだと履歴に残らない
