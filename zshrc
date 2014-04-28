@@ -60,7 +60,7 @@ plugins=(
   svn
   vagrant
   vi-mode
-  # the last position must be important
+  # The position *is* important.
 )
 
 source $ZSH/oh-my-zsh.sh
