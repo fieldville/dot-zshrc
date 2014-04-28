@@ -67,6 +67,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# シンタックスハイライト
+source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 # 履歴の検索(部分マッチ)
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
 
