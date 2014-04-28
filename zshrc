@@ -48,7 +48,6 @@ plugins=(
   github
   gradle
   history
-  history-substring-search
   mvn
   node
   osx
@@ -61,11 +60,23 @@ plugins=(
   svn
   vagrant
   vi-mode
+  # the last position must be important
 )
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+
+# 履歴の検索(部分マッチ)
+source $ZSH/plugins/history-substring-search/history-substring-search.zsh
+
+# 履歴の検索(xxxから始まる)
+autoload history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^P" history-beginning-search-backward-end
+bindkey "^N" history-beginning-search-forward-end
+
 
 # man zshoptions
 #
@@ -74,13 +85,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # typoの修正をOFF
 set -o nocorrectall
-
-autoload history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
-bindkey "^P" history-beginning-search-backward-end
-bindkey "^N" history-beginning-search-forward-end
-
 
 alias ls='ls -G -CF'
 alias ll='ls -ltrh'
