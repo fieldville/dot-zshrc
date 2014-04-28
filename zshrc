@@ -72,6 +72,8 @@ source $HOME/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # 履歴の検索(部分マッチ)
 source $ZSH/plugins/history-substring-search/history-substring-search.zsh
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 # 履歴の検索(xxxから始まる)
 autoload history-search-end
