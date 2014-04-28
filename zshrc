@@ -88,6 +88,9 @@ bindkey '^S' history-incremental-pattern-search-forward
 
 # 自動定義されてしまうhistoryのaliasを解除
 unalias history
+# 全履歴
+function history-all { history -iE 1 }
+alias ha='history-all'
 
 # man zshoptions
 #
