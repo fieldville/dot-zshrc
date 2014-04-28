@@ -80,6 +80,9 @@ zle -N history-beginning-search-forward-end history-search-end
 bindkey "^P" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
+# 履歴のインクリメンタル検索でワイルドカード利用可能
+bindkey '^R' history-incremental-pattern-search-backward
+bindkey '^S' history-incremental-pattern-search-forward
 
 # man zshoptions
 #
