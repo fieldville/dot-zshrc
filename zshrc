@@ -42,7 +42,6 @@ plugins=(
   git-flow
   git-remote-branch
   github
-  heroku
   history
   node
   osx
@@ -57,7 +56,6 @@ plugins=(
   cap
   ssh-agent
   mvn
-  sublime
   history-substring-search
   autojump
   gradle
