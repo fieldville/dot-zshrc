@@ -1,6 +1,9 @@
 #setopt XTRACE
 #setopt VERBOSE
 
+# PATHの重複を排除
+typeset -U path PATH
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.zsh/oh-my-zsh
 
