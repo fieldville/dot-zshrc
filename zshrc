@@ -32,7 +32,38 @@ DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler compleat gem git git-extras git-flow git-remote-branch github heroku history node osx rails rake ruby rbenv svn vi-mode perl vagrant cap ssh-agent mvn sublime history-substring-search autojump gradle bower emoji-clock)
+plugins=(
+  brew
+  bundler
+  compleat
+  gem
+  git
+  git-extras
+  git-flow
+  git-remote-branch
+  github
+  heroku
+  history
+  node
+  osx
+  rails
+  rake
+  ruby
+  rbenv
+  svn
+  vi-mode
+  perl
+  vagrant
+  cap
+  ssh-agent
+  mvn
+  sublime
+  history-substring-search
+  autojump
+  gradle
+  bower
+  emoji-clock
+)
 
 source $ZSH/oh-my-zsh.sh
 
