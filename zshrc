@@ -34,9 +34,9 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
   autojump
-  bower
   brew
   bundler
+  bower
   cap
   compleat
   emoji-clock
