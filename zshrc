@@ -82,8 +82,8 @@ bindkey -M vicmd 'j' history-substring-search-down
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-bindkey "^P" history-beginning-search-backward-end
-bindkey "^N" history-beginning-search-forward-end
+bindkey '^P' history-beginning-search-backward-end
+bindkey '^N' history-beginning-search-forward-end
 
 # 履歴のインクリメンタル検索でワイルドカード利用可能
 bindkey '^R' history-incremental-pattern-search-backward
@@ -102,6 +102,9 @@ alias ha='history-all'
 #
 # typoの修正をOFF
 set -o nocorrectall
+
+# コマンドラインをエディタで編集
+bindkey -M vicmd 'v' edit-command-line
 
 alias ls='ls -G -CF'
 alias ll='ls -ltrh'
