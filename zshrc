@@ -133,15 +133,48 @@ alias bower='noglob bower'
 
 # Global aliases -- These do not have to be
 # at the beginning of the command line.
-alias -g M='| more'
-alias -g H='| head'
-alias -g T='| tail'
-alias -g L='| lv'
-alias -g V='| vim -'
-alias -g N='| cat -n'
-alias -g G='| grep'
-alias -g X='| xargs'
+alias -g .....='../../../..'
+alias -g ....='../../..'
+alias -g ...='../..'
 alias -g A="| awk '{print \$2}'"
+alias -g C='| wc -l'
+alias -g CA="2>&1 | cat -A"
+alias -g D="DISPLAY=:0.0"
+alias -g DN=/dev/null
+alias -g ED="export DISPLAY=:0.0"
+alias -g EG='|& grep'
+alias -g EH='|& head'
+alias -g EL='|& less'
+alias -g ELS='|& less -S'
+alias -g ET='|& tail'
+alias -g ETL='|& tail -20'
+alias -g F=' | fmt -'
+alias -g G='| grep'
+alias -g H='| head'
+alias -g HL='|& head -20'
+alias -g L='| lv'
+alias -g LL="2>&1 | less"
+alias -g LS='| less -S'
+alias -g M='| more'
+alias -g MM='| most'
+alias -g N='| cat -n'
+alias -g NE="2> /dev/null"
+alias -g NS='| sort -n'
+alias -g NUL="> /dev/null 2>&1"
+alias -g PIPE='|'
+alias -g R=' > /c/aaa/tee.txt '
+alias -g RNS='| sort -nr'
+alias -g S='| sort'
+alias -g Sk="*~(*.bz2|*.gz|*.tgz|*.zip|*.z)"
+alias -g T='| tail'
+alias -g TL='| tail -20'
+alias -g US='| sort -u'
+alias -g V='| vim -'
+alias -g VM=/var/log/messages
+alias -g X0='| xargs -0'
+alias -g X0G='| xargs -0 grep'
+alias -g X='| xargs'
+alias -g XG='| xargs grep'
 
 [[ -r $HOME/.alias.private ]] && source $HOME/.alias.private
 [[ -r $HOME/.alias ]] && source $HOME/.alias
