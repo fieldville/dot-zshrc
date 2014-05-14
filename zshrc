@@ -200,7 +200,7 @@ if [[ ! -z "$TMUX" ]]; then
   elif ! [ -z $IS_UBUNTU ]; then
       tmux set-option status-bg yellow | cat > /dev/null
   elif ! [ -z $IS_MAC ]; then
-      tmux set-option status-bg blue | cat > /dev/null
+      #tmux set-option status-bg blue | cat > /dev/null
   else
       tmux set-option status-bg $(perl -MList::Util=sum -e'print+(red,green,blue,yellow,cyan,magenta,white)[sum(unpack"C*",shift)%7]' $(hostname)) | cat > /dev/null
   fi
