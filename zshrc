@@ -16,7 +16,8 @@ fpath=($HOME/.zsh/zsh-completions/src $fpath)
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="steeef"
 #ZSH_THEME="xiong-chiamiov-plus"
-ZSH_THEME="candy"
+#ZSH_THEME="candy"
+ZSH_THEME="avit"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
