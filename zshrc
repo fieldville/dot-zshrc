@@ -118,6 +118,7 @@ export GREP_OPTIONS=$GREP_OPTIONS' --binary-files=without-match'
 alias diff='colordiff'
 alias lv='lv -c'
 alias less=lv
+alias ts='tig status'
 alias findgrep='find . -name "*.*" | grep -v .svn | grep -v "/\." | xargs grep'
 alias drails='rails --database=postgresql'
 alias svngrep='svn list -R | xargs grep'
