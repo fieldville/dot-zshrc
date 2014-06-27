@@ -4,6 +4,8 @@
 # PATHの重複を排除
 typeset -U path PATH
 
+export PATH=$PATH:/usr/libexec
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.zsh/oh-my-zsh
 
@@ -120,9 +122,6 @@ alias lv='lv -c'
 alias less=lv
 alias tss='tig status'
 alias tst='tig stash'
-alias findgrep='find . -name "*.*" | grep -v .svn | grep -v "/\." | xargs grep'
-alias drails='rails --database=postgresql'
-alias svngrep='svn list -R | xargs grep'
 alias ub='ssh ubuntu'
 #alias cdgem='cd $GEM_HOME'
 alias cdgem='cd `gem env gemdir`'
