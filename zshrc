@@ -271,6 +271,10 @@ function peco-pkill() {
   done
 }
 alias pk="peco-pkill"
+
+function peco-rebase-all() {
+  git branch | peco | cut -b 3- | while read line; do echo -e "\e[0;31m--- $line ---\e[0m"; git rebase origin/master $line; done
+}
 ########################################
 # cdr
 zstyle ':completion:*' menu select
