@@ -236,8 +236,7 @@ bindkey "^ " magic-space           # control-space to bypass completion
 bindkey -M isearch " " magic-space # normal space during searches
 
 
-autoload -Uz compinit
-compinit
+autoload -Uz compinit && compinit
 
 which npm >/dev/null 2>&1 && eval "$(npm completion 2>/dev/null)"
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
@@ -262,3 +261,19 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# cdr
+zstyle ':completion:*' menu select
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
+zstyle ':completion:*:descriptions' format '%BCompleting%b %U%d%u'
+
+typeset -ga chpwd_functions
+
+autoload -Uz is-at-least
+if is-at-least 4.3.11; then
+  autoload -U chpwd_recent_dirs cdr
+  chpwd_functions+=chpwd_recent_dirs
+  zstyle ":chpwd:*" recent-dirs-max 500
+  zstyle ":chpwd:*" recent-dirs-default true
+  zstyle ":completion:*" recent-dirs-insert always
+fi
