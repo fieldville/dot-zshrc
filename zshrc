@@ -158,6 +158,7 @@ alias -g N='| cat -n'
 alias -g NE="2> /dev/null"
 alias -g NS='| sort -n'
 alias -g NUL="> /dev/null 2>&1"
+alias -g P='| peco'
 alias -g PIPE='|'
 alias -g R=' > /c/aaa/tee.txt '
 alias -g RNS='| sort -nr'
