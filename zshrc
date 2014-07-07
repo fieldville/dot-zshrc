@@ -255,9 +255,7 @@ function peco-select-history() {
     else
         tac="tail -r"
     fi
-    BUFFER=$(\history -n 1 | \
-        eval $tac | \
-        peco --query "$LBUFFER")
+    BUFFER=$(\history -n 1 | eval $tac | peco --query "$LBUFFER")
     CURSOR=$#BUFFER
     zle clear-screen
 }
@@ -283,9 +281,7 @@ fi
 
 ### search a destination from cdr list
 function peco-get-destination-from-cdr() {
-    cdr -l | \
-        sed -e 's/^[[:digit:]]*[[:blank:]]*//' | \
-        peco --query "$LBUFFER"
+    cdr -l | sed -e 's/^[[:digit:]]*[[:blank:]]*//' | peco --query "$LBUFFER"
 }
 
 ### search a destination from cdr list and cd the destination
