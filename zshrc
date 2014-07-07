@@ -245,6 +245,7 @@ function zman() {
     PAGER="less -g -s '+/^       "$1"'" man zshall
 }
 
+########################################
 # peco
 function peco-select-history() {
     local tac
@@ -262,6 +263,7 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
+########################################
 # cdr
 zstyle ':completion:*' menu select
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
@@ -277,3 +279,23 @@ if is-at-least 4.3.11; then
   zstyle ":chpwd:*" recent-dirs-default true
   zstyle ":completion:*" recent-dirs-insert always
 fi
+
+### search a destination from cdr list
+function peco-get-destination-from-cdr() {
+    cdr -l | \
+        sed -e 's/^[[:digit:]]*[[:blank:]]*//' | \
+        peco --query "$LBUFFER"
+}
+
+### search a destination from cdr list and cd the destination
+function peco-cdr() {
+    local destination="$(peco-get-destination-from-cdr)"
+    if [ -n "$destination" ]; then
+        BUFFER="cd $destination"
+        zle accept-line
+    else
+        zle reset-prompt
+    fi
+}
+zle -N peco-cdr
+bindkey '^j' peco-cdr
