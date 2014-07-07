@@ -134,6 +134,7 @@ alias -g .....='../../../..'
 alias -g ....='../../..'
 alias -g ...='../..'
 alias -g A="| awk '{print \$2}'"
+alias -g B='`git branch | peco | cut -b 3-`'
 alias -g C='| wc -l'
 alias -g CA="2>&1 | cat -A"
 alias -g D="DISPLAY=:0.0"
