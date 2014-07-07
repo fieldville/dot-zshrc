@@ -244,3 +244,20 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 function zman() {
     PAGER="less -g -s '+/^       "$1"'" man zshall
 }
+
+# peco
+function peco-select-history() {
+    local tac
+    if which tac > /dev/null; then
+        tac="tac"
+    else
+        tac="tail -r"
+    fi
+    BUFFER=$(history -n 1 | \
+        eval $tac | \
+        peco --query "$LBUFFER")
+    CURSOR=$#BUFFER
+    zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history
