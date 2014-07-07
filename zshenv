@@ -1,2 +1,5 @@
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# PATHの重複を排除
+typeset -U path PATH
+
+export PATH=$PATH:/usr/libexec
+

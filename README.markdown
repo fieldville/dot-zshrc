@@ -8,6 +8,7 @@
 
 ```
     ln -s ~/.zsh/zshrc ~/.zshrc
+    (ln -s ~/.zsh/zshenv ~/.zshenv) if needed
 ```
 
 ##### Switch to the `~/.zsh` directory, and fetch submodules:
