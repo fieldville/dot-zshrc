@@ -262,6 +262,15 @@ function peco-select-history() {
 zle -N peco-select-history
 bindkey '^r' peco-select-history
 
+# process kill
+function peco-pkill() {
+  for pid in `ps -ef | peco | awk '{print $2}'`
+  do
+    kill $pid
+    echo "Killed ${pid}"
+  done
+}
+alias pk="peco-pkill"
 ########################################
 # cdr
 zstyle ':completion:*' menu select
