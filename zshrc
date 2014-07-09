@@ -319,3 +319,6 @@ if [[ -r $HOME/.snippets ]]; then
     zle -N peco-snippets
     bindkey '^x^s' peco-snippets
 fi
+
+# zsh-bd
+source $HOME/.zsh/zsh-bd/bd.zsh
