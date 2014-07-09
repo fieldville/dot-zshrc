@@ -309,3 +309,13 @@ function peco-cdr() {
 }
 zle -N peco-cdr
 bindkey '^j' peco-cdr
+
+### snippets
+if [[ -r $HOME/.snippets ]]; then
+    function peco-snippets() {
+        BUFFER=$(grep -v "^#" $HOME/.snippets | peco --query "$LBUFFER")
+        zle clear-screen
+    }
+    zle -N peco-snippets
+    bindkey '^x^s' peco-snippets
+fi
