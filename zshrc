@@ -317,8 +317,25 @@ if [[ -r $HOME/.snippets ]]; then
         zle clear-screen
     }
     zle -N peco-snippets
-    bindkey '^x^s' peco-snippets
+    bindkey '^xs' peco-snippets
 fi
 
 # zsh-bd
 source $HOME/.zsh/zsh-bd/bd.zsh
+
+# peco-vim
+function peco-list-files() {
+    find . -type f | peco --query "$LBUFFER"
+}
+function peco-vim() {
+    local target="$(peco-list-files)"
+    if [ -n "$target" ]; then
+        BUFFER="vim $target"
+        zle accept-line
+    else
+        zle reset-prompt
+    fi
+}
+zle -N peco-vim
+bindkey '^xv' peco-vim
+
