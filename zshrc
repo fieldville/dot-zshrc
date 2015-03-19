@@ -316,7 +316,7 @@ if [[ -r $HOME/.snippets ]]; then
         zle clear-screen
     }
     zle -N peco-snippets
-    bindkey '^xs' peco-snippets
+    bindkey '^x^s' peco-snippets
 fi
 
 # zsh-bd
@@ -336,5 +336,5 @@ function peco-vim() {
     fi
 }
 zle -N peco-vim
-bindkey '^xv' peco-vim
+bindkey '^x^v' peco-vim
 
