@@ -126,6 +126,7 @@ alias rhino="rlwrap rhino"
 alias ag='ag --pager="less -R"'
 alias grt='$(git rev-parse --show-toplevel)'
 alias bower='noglob bower'
+alias today="date '+%Y%m%d'"
 
 # Global aliases -- These do not have to be
 # at the beginning of the command line.
