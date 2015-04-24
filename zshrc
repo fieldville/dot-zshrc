@@ -113,7 +113,6 @@ alias cp='cp -i'
 alias grep='grep --color --binary-files=without-match --color=auto --exclude-dir=.cvs --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn'
 alias diff='colordiff'
 alias lv='lv -c'
-alias less=lv
 alias tss='tig status'
 alias tst='tig stash'
 alias ub='ssh ubuntu'
