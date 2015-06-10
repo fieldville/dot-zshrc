@@ -40,6 +40,7 @@ plugins=(
   bower
   cap
   compleat
+  docker
   emoji-clock
   gem
   git
